@@ -1362,6 +1362,7 @@ function SetCamControlsMiniMapHeading(cam, toggle) end
 ---@param posX number
 ---@param posY number
 ---@param posZ number
+---@overload fun(cam: integer, coord: vector3)
 function SetCamCoord(cam, posX, posY, posZ) end
 
 ---**`CAM` `client`**  

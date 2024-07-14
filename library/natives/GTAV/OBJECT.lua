@@ -143,6 +143,7 @@ CreatePortablePickup_2 = CreateNonNetworkedPortablePickup
 ---@param netMissionEntity boolean
 ---@param doorFlag boolean
 ---@return integer
+---@overload fun(modelHash: integer | string, position: vector3, isNetwork: boolean, netMissionEntity: boolean, doorFlag: boolean): integer
 function CreateObject(modelHash, x, y, z, isNetwork, netMissionEntity, doorFlag) end
 
 ---**`OBJECT` `client`**  

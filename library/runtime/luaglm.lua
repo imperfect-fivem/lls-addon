@@ -150,6 +150,7 @@ function vector3(x, y, z) end
 ---@param w number
 ---@return vector4
 ---@overload fun(n: number): vector4
+---@overload fun(v: vector3, w: number): vector4
 ---@overload fun(q: quat): vector4
 function vector4(x, y, z, w) end
 

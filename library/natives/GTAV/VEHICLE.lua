@@ -448,6 +448,7 @@ function CreateScriptVehicleGenerator(x, y, z, heading, p4, p5, modelHash, p7, p
 ---@param isNetwork boolean
 ---@param netMissionEntity boolean
 ---@return integer
+---@overload fun(modelHash: integer | string, position: vector3, heading: number, isNetwork: boolean, netMissionEntity: boolean): integer
 function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity) end
 
 ---**`VEHICLE` `client`**  

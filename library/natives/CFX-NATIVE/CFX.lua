@@ -397,6 +397,7 @@ function CreateDui(url, width, height) end
 ---@param netMissionEntity boolean
 ---@param doorFlag boolean
 ---@return integer
+---@overload fun(modelHash: integer | string, position: vector3, isNetwork: boolean, netMissionEntity: boolean, doorFlag: boolean): integer
 function CreateObject(modelHash, x, y, z, isNetwork, netMissionEntity, doorFlag) end
 
 ---**`CFX` `server`**  
@@ -517,6 +518,7 @@ function CreateTimecycleModifier(modifierName) end
 ---@param isNetwork boolean
 ---@param netMissionEntity boolean
 ---@return integer
+---@overload fun(modelHash: integer | string, position: vector3, heading: number, isNetwork: boolean, netMissionEntity: boolean): integer
 function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity) end
 
 ---**`CFX` `server`**  
@@ -533,6 +535,7 @@ function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity)
 ---@param z number
 ---@param heading number
 ---@return integer
+---@overload fun(modelHash: integer | string, type: string, position: vector3, heading: number): integer
 function CreateVehicleServerSetter(modelHash, type, x, y, z, heading) end
 
 ---**`CFX` `server`**  
@@ -4669,6 +4672,7 @@ function SetDiscordRichPresenceAssetText(text) end
 ---@param y number
 ---@param z number
 ---@param is2d boolean
+---@overload fun(origin: vector3, is2d: boolean)
 function SetDrawOrigin(x, y, z, is2d) end
 
 ---**`CFX` `client`**  

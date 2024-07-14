@@ -3570,6 +3570,7 @@ function SetFloatingHelpTextToEntity(hudIndex, entity, offsetX, offsetY) end
 ---@param x number
 ---@param y number
 ---@param z number
+---@overload fun(hudIndex: integer, position: vector3)
 function SetFloatingHelpTextWorldPosition(hudIndex, x, y, z) end
 
 ---**`HUD` `client`**  

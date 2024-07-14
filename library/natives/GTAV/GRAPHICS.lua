@@ -3371,6 +3371,7 @@ function SetDisableDecalRenderingThisFrame() end
 ---@param y number
 ---@param z number
 ---@param p3 any
+---@overload fun(origin: vector3, p3: any)
 function SetDrawOrigin(x, y, z, p3) end
 
 ---**`GRAPHICS` `client`**  

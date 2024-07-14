@@ -53,6 +53,7 @@ ShapeTestResultEntity = ReleaseScriptGuidFromEntity
 ---@param entity integer
 ---@param p8 integer
 ---@return integer
+---@overload fun(startingCoord: vector3, endingCoord: vector3, flags: integer, entity: integer, p8: integer): integer
 function StartExpensiveSynchronousShapeTestLosProbe(x1, y1, z1, x2, y2, z2, flags, entity, p8) end
 
 ---@deprecated
