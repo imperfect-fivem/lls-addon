@@ -2245,7 +2245,7 @@ function GetResourceKvpString(key) end
 ---See also: [Resource manifest](https://docs.fivem.net/resources/manifest/)
 ---@param resourceName string
 ---@param metadataKey string
----@param index integer
+---@param index? integer # 0 if not presented
 ---@return string
 function GetResourceMetadata(resourceName, metadataKey, index) end
 
