@@ -46,6 +46,7 @@ function AddBlipForArea(x, y, z, width, height) end
 ---@param y number
 ---@param z number
 ---@return integer
+---@overload fun(coord: vector3): integer
 function AddBlipForCoord(x, y, z) end
 
 ---**`CFX` `server`**  
