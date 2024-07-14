@@ -184,8 +184,8 @@ function AddReplaceTexture(origTxd, origTxn, newTxd, newTxn) end
 ---If bagName refers to an entity, use [GET_ENTITY_FROM_STATE_BAG_NAME](?\_0x4BDF1868) to get the entity handle
 ---
 ---If bagName refers to a player, use [GET_PLAYER_FROM_STATE_BAG_NAME](?\_0xA56135E0) to get the player handle
----@param keyFilter string
----@param bagFilter string
+---@param keyFilter? string
+---@param bagFilter? string
 ---@param handler function
 ---@return integer
 function AddStateBagChangeHandler(keyFilter, bagFilter, handler) end
