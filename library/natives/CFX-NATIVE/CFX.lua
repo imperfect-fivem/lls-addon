@@ -2994,25 +2994,44 @@ function GetVehicleType(vehicle) end
 ---Returns the model type of the vehicle as defined by:
 ---
 ---```cpp
----enum VehicleType---
----{---
----	VEHICLE_TYPE_NONE = -1,---
----	VEHICLE_TYPE_CAR = 0,---
----	VEHICLE_TYPE_PLANE = 1,---
----	VEHICLE_TYPE_TRAILER = 2,---
----	VEHICLE_TYPE_QUADBIKE = 3,---
----	VEHICLE_TYPE_DRAFT = 4,---
----	VEHICLE_TYPE_SUBMARINECAR = 5,---
----	VEHICLE_TYPE_AMPHIBIOUS_AUTOMOBILE = 6,---
----	VEHICLE_TYPE_AMPHIBIOUS_QUADBIKE = 7,---
----	VEHICLE_TYPE_HELI = 8,---
----	VEHICLE_TYPE_BLIMP = 9,---
----	VEHICLE_TYPE_AUTOGYRO = 10,---
----	VEHICLE_TYPE_BIKE = 11,---
----	VEHICLE_TYPE_BICYCLE = 12,---
----	VEHICLE_TYPE_BOAT = 13,---
----	VEHICLE_TYPE_TRAIN = 14,---
----	VEHICLE_TYPE_SUBMARINE = 15,---
+---enum VehicleType
+---
+---{
+---
+---	VEHICLE_TYPE_NONE = -1,
+---
+---	VEHICLE_TYPE_CAR = 0,
+---
+---	VEHICLE_TYPE_PLANE = 1,
+---
+---	VEHICLE_TYPE_TRAILER = 2,
+---
+---	VEHICLE_TYPE_QUADBIKE = 3,
+---
+---	VEHICLE_TYPE_DRAFT = 4,
+---
+---	VEHICLE_TYPE_SUBMARINECAR = 5,
+---
+---	VEHICLE_TYPE_AMPHIBIOUS_AUTOMOBILE = 6,
+---
+---	VEHICLE_TYPE_AMPHIBIOUS_QUADBIKE = 7,
+---
+---	VEHICLE_TYPE_HELI = 8,
+---
+---	VEHICLE_TYPE_BLIMP = 9,
+---
+---	VEHICLE_TYPE_AUTOGYRO = 10,
+---
+---	VEHICLE_TYPE_BIKE = 11,
+---
+---	VEHICLE_TYPE_BICYCLE = 12,
+---
+---	VEHICLE_TYPE_BOAT = 13,
+---
+---	VEHICLE_TYPE_TRAIN = 14,
+---
+---	VEHICLE_TYPE_SUBMARINE = 15,
+---
 ---};
 ---```
 ---@param vehicle integer
@@ -4131,7 +4150,7 @@ function RegisterArchetypes(factory) end
 ---
 ---![](https://i.imgur.com/TaCnG09.png)
 ---@param commandName string
----@param handler function
+---@param handler fun(source: integer, args: string[], rawCommand: string)
 ---@param restricted? boolean
 function RegisterCommand(commandName, handler, restricted) end
 
