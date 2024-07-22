@@ -2293,7 +2293,7 @@ function GetResourcePath(resourceName) end
 ---[Native Documentation](https://docs.fivem.net/natives/?_0x4039B485)  
 ---Returns the current state of the specified resource.
 ---@param resourceName string
----@return string
+---@return "missing" | "started" | "starting" | "stopped" | "stopping" | "uninitialized"  | "unknown"
 function GetResourceState(resourceName) end
 
 ---**`CFX` `client`**  
