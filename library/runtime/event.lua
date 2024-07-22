@@ -1,6 +1,6 @@
 ---@meta
 
----@type unknown
+---@type string | integer | nil
 source = nil
 
 ---@overload fun(name: string, method: function)
