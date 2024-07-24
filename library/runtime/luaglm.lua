@@ -141,6 +141,7 @@ function vector2(x, y) end
 ---@param y number
 ---@param z number
 ---@return vector3
+---@overload fun(v: vector2, z: number): vector4
 ---@overload fun(n: number): vector3
 function vector3(x, y, z) end
 
