@@ -4789,6 +4789,7 @@ function SetDuiUrl(duiObject, url) end
 ---@param deadFlag boolean
 ---@param ragdollFlag boolean
 ---@param clearArea boolean
+---@overload fun(entity: integer, position: vector3, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean)
 function SetEntityCoords(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag, clearArea) end
 
 ---**`CFX` `server`**  
