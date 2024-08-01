@@ -46,7 +46,6 @@ function AddBlipForArea(x, y, z, width, height) end
 ---@param y number
 ---@param z number
 ---@return integer
----@overload fun(coord: vector3): integer
 function AddBlipForCoord(x, y, z) end
 
 ---**`CFX` `server`**  
@@ -81,7 +80,6 @@ function AddBlipForEntity(entity) end
 ---@param posZ number
 ---@param radius number
 ---@return integer
----@overload fun(position: vector3, radius: number): integer
 function AddBlipForRadius(posX, posY, posZ, radius) end
 
 ---**`CFX` `client`**  
@@ -403,7 +401,6 @@ function CreateDui(url, width, height) end
 ---@param netMissionEntity boolean
 ---@param doorFlag boolean
 ---@return integer
----@overload fun(modelHash: integer | string, position: vector3, isNetwork: boolean, netMissionEntity: boolean, doorFlag: boolean): integer
 function CreateObject(modelHash, x, y, z, isNetwork, netMissionEntity, doorFlag) end
 
 ---**`CFX` `server`**  
@@ -524,7 +521,6 @@ function CreateTimecycleModifier(modifierName) end
 ---@param isNetwork boolean
 ---@param netMissionEntity boolean
 ---@return integer
----@overload fun(modelHash: integer | string, position: vector3, heading: number, isNetwork: boolean, netMissionEntity: boolean): integer
 function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity) end
 
 ---**`CFX` `server`**  
@@ -541,7 +537,6 @@ function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity)
 ---@param z number
 ---@param heading number
 ---@return integer
----@overload fun(modelHash: integer | string, type: string, position: vector3, heading: number): integer
 function CreateVehicleServerSetter(modelHash, type, x, y, z, heading) end
 
 ---**`CFX` `server`**  
@@ -4767,7 +4762,6 @@ function SetDiscordRichPresenceAssetText(text) end
 ---@param y number
 ---@param z number
 ---@param is2d boolean
----@overload fun(origin: vector3, is2d: boolean)
 function SetDrawOrigin(x, y, z, is2d) end
 
 ---**`CFX` `client`**  
@@ -4790,7 +4784,6 @@ function SetDuiUrl(duiObject, url) end
 ---@param deadFlag boolean
 ---@param ragdollFlag boolean
 ---@param clearArea boolean
----@overload fun(entity: integer, position: vector3, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean)
 function SetEntityCoords(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag, clearArea) end
 
 ---**`CFX` `server`**  

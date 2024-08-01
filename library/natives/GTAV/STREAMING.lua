@@ -600,7 +600,6 @@ function RequestClipSet(clipSet) end
 ---@param x number
 ---@param y number
 ---@param z number
----@overload fun(coord: vector3)
 function RequestCollisionAtCoord(x, y, z) end
 
 ---**`STREAMING` `client`**  

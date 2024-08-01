@@ -74,7 +74,6 @@ function AddBlipForArea(x, y, z, width, height) end
 ---@param y number
 ---@param z number
 ---@return integer
----@overload fun(coord: vector3): integer
 function AddBlipForCoord(x, y, z) end
 
 ---**`HUD` `client`**  
@@ -108,7 +107,6 @@ function AddBlipForPickup(pickup) end
 ---@param posZ number
 ---@param radius number
 ---@return integer
----@overload fun(position: vector3, radius: number): integer
 function AddBlipForRadius(posX, posY, posZ, radius) end
 
 ---**`HUD` `client`**  
@@ -3571,7 +3569,6 @@ function SetFloatingHelpTextToEntity(hudIndex, entity, offsetX, offsetY) end
 ---@param x number
 ---@param y number
 ---@param z number
----@overload fun(hudIndex: integer, position: vector3)
 function SetFloatingHelpTextWorldPosition(hudIndex, x, y, z) end
 
 ---**`HUD` `client`**  

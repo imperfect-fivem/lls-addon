@@ -957,7 +957,6 @@ function DrawLowQualityPhotoToPhone(p0, p1) end
 ---@param textureDict? string
 ---@param textureName? string
 ---@param drawOnEnts boolean
----@overload fun(type: integer, pos: vector3, dirX: number, dirY: number, dirZ: number, rotX: number, rotY: number, rotZ: number, scaleX: number, scaleY: number, scaleZ: number, red: integer, green: integer, blue: integer, alpha: integer, bobUpAndDown: boolean, faceCamera: boolean, p19: integer, rotate: boolean, textureDict?: string, textureName?: string, drawOnEnts: boolean)
 function DrawMarker(type, posX, posY, posZ, dirX, dirY, dirZ, rotX, rotY, rotZ, scaleX, scaleY, scaleZ, red, green, blue, alpha, bobUpAndDown, faceCamera, p19, rotate, textureDict, textureName, drawOnEnts) end
 
 ---**`GRAPHICS` `client`**  
@@ -3371,7 +3370,6 @@ function SetDisableDecalRenderingThisFrame() end
 ---@param y number
 ---@param z number
 ---@param p3 any
----@overload fun(origin: vector3, p3: any)
 function SetDrawOrigin(x, y, z, p3) end
 
 ---**`GRAPHICS` `client`**  
