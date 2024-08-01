@@ -108,6 +108,7 @@ function AddBlipForPickup(pickup) end
 ---@param posZ number
 ---@param radius number
 ---@return integer
+---@overload fun(position: vector3, radius: number): integer
 function AddBlipForRadius(posX, posY, posZ, radius) end
 
 ---**`HUD` `client`**  

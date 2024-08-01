@@ -81,6 +81,7 @@ function AddBlipForEntity(entity) end
 ---@param posZ number
 ---@param radius number
 ---@return integer
+---@overload fun(position: vector3, radius: number): integer
 function AddBlipForRadius(posX, posY, posZ, radius) end
 
 ---**`CFX` `client`**  
